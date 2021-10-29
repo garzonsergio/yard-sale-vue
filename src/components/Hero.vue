@@ -1,6 +1,6 @@
 <template>
   <div class="hero-wrapper">
-    <div class="hero-container">
+    <div class="hero-container" :style="cssVars">
       <svg
         width="100%"
         height="100%"
@@ -45,10 +45,21 @@
 export default {
   name: "Hero",
   props: {
+    height: {
+      type: Number,
+      default: 16,
+    },
     color: {
       default: "#ACD9B2",
       required: false,
       type: String,
+    },
+  },
+  computed: {
+    cssVars() {
+      return {
+        "--container-height": this.height + "px",
+      };
     },
   },
 };
@@ -61,5 +72,6 @@ export default {
 }
 .hero-container {
   width: 300px;
+  height: --var(container-height);
 }
 </style>

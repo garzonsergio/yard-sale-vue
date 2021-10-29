@@ -1,5 +1,7 @@
 <template>
   <Hero />
+  <Hero :color="'#FF0000'" :height="200" />
+  <Hero :color="'#0000FF'" />
 </template>
 // <img alt="Vue logo" src="./assets/logo.png" />
 
