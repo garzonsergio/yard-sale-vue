@@ -47,7 +47,7 @@ export default {
   props: {
     height: {
       type: Number,
-      default: 16,
+      default: 160,
     },
     color: {
       default: "#ACD9B2",
@@ -72,6 +72,6 @@ export default {
 }
 .hero-container {
   width: 300px;
-  height: --var(container-height);
+  height: var(--container-height);
 }
 </style>
