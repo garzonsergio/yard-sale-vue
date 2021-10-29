@@ -73,5 +73,6 @@ export default {
 .hero-container {
   width: 300px;
   height: var(--container-height);
+  margin-bottom: 56px;
 }
 </style>
