@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # yard-sale
 
 ## Project setup
@@ -23,6 +22,3 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
-=======
-# yard-sale-vue
->>>>>>> 89a73e660e5122f1100c064d2a15d424b8a2dc40
