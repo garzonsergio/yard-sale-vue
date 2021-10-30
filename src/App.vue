@@ -1,10 +1,17 @@
 <template>
   <Hero :height="43" />
-    <Input :label="'Email address'" />
-    <Input :label="'Password'" :typeInput="'password'" :placeHolder="'*********'"/>
-    <!-- <Form :fields="[{name: 'xname', type: 'text'}, {}]"/> -->
+  <Input :label="'Email address'" />
+  <Input
+    :label="'Password'"
+    :typeInput="'password'"
+    :placeHolder="'*********'"
+  />
+  
 </template>
-
+ <!-- 
+ TODO: Implement this component after set the <Input /> 
+ <Form :fields="[{name: 'xname', type: 'text'}, {}]"/> 
+ -->
 
 <script>
 import Hero from "./components/Hero.vue";
