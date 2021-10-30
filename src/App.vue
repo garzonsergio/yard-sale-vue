@@ -1,18 +1,27 @@
 <template>
-  <Hero />
-  <Hero :color="'#FF0000'" :height="50" />
-  <Hero :color="'#0000FF'" />
+  <Hero :height="43" />
+  <Input :label="'Email address'" />
+  <Input
+    :label="'Password'"
+    :typeInput="'password'"
+    :placeHolder="'*********'"
+  />
+  
 </template>
-// <img alt="Vue logo" src="./assets/logo.png" />
-
+ <!-- 
+ TODO: Implement this component after set the <Input /> 
+ <Form :fields="[{name: 'xname', type: 'text'}, {}]"/> 
+ -->
 
 <script>
 import Hero from "./components/Hero.vue";
+import Input from "./components/Input.vue";
 
 export default {
   name: "App",
   components: {
     Hero,
+    Input,
   },
 };
 </script>
