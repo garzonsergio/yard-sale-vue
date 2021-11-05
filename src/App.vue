@@ -6,6 +6,7 @@
     :typeInput="'password'"
     :placeHolder="'*********'"
   />
+  <Button :textButton="'Log in'"/>
   
 </template>
  <!-- 
@@ -16,12 +17,14 @@
 <script>
 import Hero from "./components/Hero.vue";
 import Input from "./components/Input.vue";
+import Button from "./components/Button.vue";
 
 export default {
   name: "App",
   components: {
     Hero,
     Input,
+    Button,
   },
 };
 </script>
