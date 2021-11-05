@@ -1,7 +1,9 @@
 <template>
 <div class="input-container">
+  <div class="input-wrapper">
     <label>{{label}}</label>
     <input :type="typeInput" :placeholder="placeHolder" />
+  </div>
 </div>
 </template>
 
@@ -28,10 +30,19 @@ export default {
 <style scoped>
 
 .input-container{
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
     
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-content: center;
+  
+}
+
+.input-wrapper{
+  display:flex;
+  flex-direction: column;
+  width:320px;
+  align-self: center;
 }
 
 label{
@@ -40,6 +51,9 @@ label{
     font-size: var(--sm);
     font-weight: 700;
     margin-bottom: 6px;
+    align-self: flex-start;
+    
+
     
 }
 input[type="text"],
@@ -50,8 +64,10 @@ input[type="password"] {
   color: var(--text-input);
   height: 42px;
   margin-bottom: 24px;
-  max-width: 480px;
+  max-width: 320px;
   width: 100%;
+  align-self: center;
+  
 }
 
 </style>
