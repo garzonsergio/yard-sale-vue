@@ -2,15 +2,17 @@
 <div class="input-container">
   <div class="input-wrapper">
     <label>{{label}}</label>
-    <input :type="typeInput" :placeholder="placeHolder" />
+    <input :type="typeInput" :placeholder="placeHolder" v-model="label1"/>
   </div>
 </div>
+
+<p> {{label1}} </p>
 </template>
 
 <script>
 import "../style/theme.css";
 export default {
-  name: "Input",
+  name: "Input",  
   props: {
     label: String,
     typeInput: {
@@ -23,6 +25,11 @@ export default {
     }
     
   },
+  data (){
+    return {
+      label1: '',
+    }
+  }
 };
 </script>
 
@@ -31,33 +38,35 @@ export default {
 
 .input-container{
     
+  align-content: center;
   display: flex;
   flex-direction: column;
   width: 100%;
-  align-content: center;
   
 }
 
 .input-wrapper{
+  align-self: center;
   display:flex;
   flex-direction: column;
   width:320px;
-  align-self: center;
 }
 
 label{
+    align-self: flex-start;
     color: var(--black);
     font-family: 'Quicksand', sans-serif;
     font-size: var(--sm);
     font-weight: 700;
     margin-bottom: 6px;
-    align-self: flex-start;
     
 
     
 }
 input[type="text"],
-input[type="password"] {
+input[type="password"],
+input[type="email"]{
+  align-self: center;
   background-color: var(--text-input-field);
   border-radius: 10px;
   border:none;
@@ -66,7 +75,6 @@ input[type="password"] {
   margin-bottom: 24px;
   max-width: 320px;
   width: 100%;
-  align-self: center;
   
 }
 

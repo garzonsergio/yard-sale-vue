@@ -1,6 +1,9 @@
 <template>
   <Hero :height="43" />
-  <Input :label="'Email address'" />
+  <Input 
+    :label="'Email address'"
+    :typeInput="'email'" 
+  />
   <Input
     :label="'Password'"
     :typeInput="'password'"
